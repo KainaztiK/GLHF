@@ -17,5 +17,10 @@ namespace WinAsynchMethod
         {
             InitializeComponent();
         }
+        private int Summ(int a, int b)
+        {
+            System.Threading.Thread.Sleep(9000);
+            return a + b;
+        }
     }
 }

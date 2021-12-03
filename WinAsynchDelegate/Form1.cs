@@ -24,6 +24,17 @@ namespace WinAsynchDelegate
             {
                 System.Threading.Thread.Sleep(1000);
                 SetProgress((int)(j * 1000) / seconds);
+                if (Cancel)
+                    break;
+            }
+            if(Cancel)
+            {
+                System.Windows.Forms.MessageBox.Show("Cancelled");
+                Cancel = false;
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("Complete");
             }
         }
         public delegate void SetProgressDelegate(int val);

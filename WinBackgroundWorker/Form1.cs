@@ -38,7 +38,7 @@ namespace WinBackgroundWorker
                     return;
                 }
                 System.Threading.Thread.Sleep(1000);
-                backgroundWorker1.ReportProgress((int)(j * 100 / j));
+                backgroundWorker1.ReportProgress((int)(j * 100 / i));
             }
         }
 

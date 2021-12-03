@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLHF", "GLHF\GLHF.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDF Reader", "PDF Reader\PDF Reader.csproj", "{F79C5DA6-D243-41D5-A7B0-5E6E665F33E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAnim", "WinAnim\WinAnim.csproj", "{82D20243-935C-4140-B67C-D31D7FF24E17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F79C5DA6-D243-41D5-A7B0-5E6E665F33E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F79C5DA6-D243-41D5-A7B0-5E6E665F33E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F79C5DA6-D243-41D5-A7B0-5E6E665F33E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82D20243-935C-4140-B67C-D31D7FF24E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D20243-935C-4140-B67C-D31D7FF24E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D20243-935C-4140-B67C-D31D7FF24E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D20243-935C-4140-B67C-D31D7FF24E17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

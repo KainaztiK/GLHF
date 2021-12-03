@@ -22,5 +22,11 @@ namespace WinAsynchMethod
             System.Threading.Thread.Sleep(9000);
             return a + b;
         }
+
+        private void btnRun_Click(object sender, EventArgs e)
+        {
+            AsyncSumm summdelegate = new AsyncSumm(Summ);
+        }
+
     }
 }

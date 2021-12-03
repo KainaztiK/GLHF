@@ -17,10 +17,14 @@ namespace WinAsynchDelegate
         {
             InitializeComponent();
         }
+        bool Cancel;
         private void TimeConsumingMethod(int seconds)
         {
-            for(int j=1;j<=seconds;j++)
+            for (int j = 1; j <= seconds; j++)
+            {
                 System.Threading.Thread.Sleep(1000);
+                SetProgress((int)(j * 1000) / seconds);
+            }
         }
         public delegate void SetProgressDelegate(int val);
         public void SetProgress(int val)

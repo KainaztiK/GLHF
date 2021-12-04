@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblA = new System.Windows.Forms.Label();
             this.lblB = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -35,6 +36,9 @@
             this.txbB = new System.Windows.Forms.TextBox();
             this.btnRun = new System.Windows.Forms.Button();
             this.btnWork = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.button1 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // lblA
@@ -66,43 +70,70 @@
             // 
             // txbA
             // 
+            this.helpProvider1.SetHelpString(this.txbA, "For input integer A. ");
             this.txbA.Location = new System.Drawing.Point(88, 24);
             this.txbA.Name = "txbA";
+            this.helpProvider1.SetShowHelp(this.txbA, true);
             this.txbA.Size = new System.Drawing.Size(100, 20);
             this.txbA.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.txbA, "For input integer A. ");
             // 
             // txbB
             // 
+            this.helpProvider1.SetHelpString(this.txbB, "For input integer B. ");
             this.txbB.Location = new System.Drawing.Point(296, 24);
             this.txbB.Name = "txbB";
+            this.helpProvider1.SetShowHelp(this.txbB, true);
             this.txbB.Size = new System.Drawing.Size(100, 20);
             this.txbB.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.txbB, "For input integer B. ");
             // 
             // btnRun
             // 
+            this.helpProvider1.SetHelpString(this.btnRun, "Sum");
             this.btnRun.Location = new System.Drawing.Point(16, 64);
             this.btnRun.Name = "btnRun";
+            this.helpProvider1.SetShowHelp(this.btnRun, true);
             this.btnRun.Size = new System.Drawing.Size(75, 23);
             this.btnRun.TabIndex = 5;
             this.btnRun.Text = "Сумма";
+            this.toolTip1.SetToolTip(this.btnRun, "Sum");
             this.btnRun.UseVisualStyleBackColor = true;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
             // btnWork
             // 
+            this.helpProvider1.SetHelpString(this.btnWork, "Start work");
             this.btnWork.Location = new System.Drawing.Point(120, 128);
             this.btnWork.Name = "btnWork";
+            this.helpProvider1.SetShowHelp(this.btnWork, true);
             this.btnWork.Size = new System.Drawing.Size(75, 23);
             this.btnWork.TabIndex = 6;
             this.btnWork.Text = "Работа";
+            this.toolTip1.SetToolTip(this.btnWork, "Start work");
             this.btnWork.UseVisualStyleBackColor = true;
             this.btnWork.Click += new System.EventHandler(this.btnWork_Click);
+            // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "C:\\Users\\falil\\source\\repos\\KainaztiK\\GLHF\\WinAsynchMethod\\Справка.docx";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(322, 128);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Help";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 161);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnWork);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.txbB);
@@ -110,6 +141,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblB);
             this.Controls.Add(this.lblA);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.HelpButton = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Асинхронный запуск";
             this.ResumeLayout(false);
@@ -126,6 +161,9 @@
         private System.Windows.Forms.TextBox txbB;
         private System.Windows.Forms.Button btnRun;
         private System.Windows.Forms.Button btnWork;
+        private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

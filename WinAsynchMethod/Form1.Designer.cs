@@ -36,6 +36,7 @@
             this.btnRun = new System.Windows.Forms.Button();
             this.btnWork = new System.Windows.Forms.Button();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblA
@@ -107,11 +108,26 @@
             this.btnWork.UseVisualStyleBackColor = true;
             this.btnWork.Click += new System.EventHandler(this.btnWork_Click);
             // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "C:\\Users\\falil\\source\\repos\\KainaztiK\\GLHF\\WinAsynchMethod\\Справка.docx";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(322, 128);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Help";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 161);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnWork);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.txbB);
@@ -140,6 +156,7 @@
         private System.Windows.Forms.Button btnRun;
         private System.Windows.Forms.Button btnWork;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

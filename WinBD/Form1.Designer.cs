@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
             this.SuspendLayout();
+            // 
+            // oleDbConnection1
+            // 
+            this.oleDbConnection1.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\falil\\source\\repos\\Kainazt" +
+    "iK\\GLHF\\RBProduct.mdb";
             // 
             // Form1
             // 
@@ -42,6 +48,8 @@
         }
 
         #endregion
+
+        private System.Data.OleDb.OleDbConnection oleDbConnection1;
     }
 }
 

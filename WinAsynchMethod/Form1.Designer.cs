@@ -76,6 +76,7 @@
             this.helpProvider1.SetShowHelp(this.txbA, true);
             this.txbA.Size = new System.Drawing.Size(100, 20);
             this.txbA.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.txbA, "For input integer A. ");
             // 
             // txbB
             // 
@@ -85,6 +86,7 @@
             this.helpProvider1.SetShowHelp(this.txbB, true);
             this.txbB.Size = new System.Drawing.Size(100, 20);
             this.txbB.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.txbB, "For input integer B. ");
             // 
             // btnRun
             // 
@@ -95,6 +97,7 @@
             this.btnRun.Size = new System.Drawing.Size(75, 23);
             this.btnRun.TabIndex = 5;
             this.btnRun.Text = "Сумма";
+            this.toolTip1.SetToolTip(this.btnRun, "Sum");
             this.btnRun.UseVisualStyleBackColor = true;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
@@ -107,6 +110,7 @@
             this.btnWork.Size = new System.Drawing.Size(75, 23);
             this.btnWork.TabIndex = 6;
             this.btnWork.Text = "Работа";
+            this.toolTip1.SetToolTip(this.btnWork, "Start work");
             this.btnWork.UseVisualStyleBackColor = true;
             this.btnWork.Click += new System.EventHandler(this.btnWork_Click);
             // 

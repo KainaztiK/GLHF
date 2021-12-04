@@ -45,6 +45,8 @@
             this.телефонDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.SortTextBox = new System.Windows.Forms.TextBox();
+            this.FilterTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -189,17 +191,35 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(102, 61);
+            this.label2.Location = new System.Drawing.Point(29, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Фильтрация";
+            // 
+            // SortTextBox
+            // 
+            this.SortTextBox.Location = new System.Drawing.Point(103, 53);
+            this.SortTextBox.Name = "SortTextBox";
+            this.SortTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SortTextBox.TabIndex = 5;
+            this.SortTextBox.Text = "Фамилия";
+            // 
+            // FilterTextBox
+            // 
+            this.FilterTextBox.Location = new System.Drawing.Point(103, 83);
+            this.FilterTextBox.Name = "FilterTextBox";
+            this.FilterTextBox.Size = new System.Drawing.Size(100, 20);
+            this.FilterTextBox.TabIndex = 6;
+            this.FilterTextBox.Text = "Город = \'Пушкин\'";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 261);
+            this.Controls.Add(this.FilterTextBox);
+            this.Controls.Add(this.SortTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
@@ -232,5 +252,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn телефонDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox SortTextBox;
+        private System.Windows.Forms.TextBox FilterTextBox;
     }
 }

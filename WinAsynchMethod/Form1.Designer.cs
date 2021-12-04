@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblA = new System.Windows.Forms.Label();
             this.lblB = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,6 +38,7 @@
             this.btnWork = new System.Windows.Forms.Button();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.button1 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // lblA
@@ -74,6 +76,7 @@
             this.helpProvider1.SetShowHelp(this.txbA, true);
             this.txbA.Size = new System.Drawing.Size(100, 20);
             this.txbA.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.txbA, "For input integer A. ");
             // 
             // txbB
             // 
@@ -83,6 +86,7 @@
             this.helpProvider1.SetShowHelp(this.txbB, true);
             this.txbB.Size = new System.Drawing.Size(100, 20);
             this.txbB.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.txbB, "For input integer B. ");
             // 
             // btnRun
             // 
@@ -93,6 +97,7 @@
             this.btnRun.Size = new System.Drawing.Size(75, 23);
             this.btnRun.TabIndex = 5;
             this.btnRun.Text = "Сумма";
+            this.toolTip1.SetToolTip(this.btnRun, "Sum");
             this.btnRun.UseVisualStyleBackColor = true;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
@@ -105,6 +110,7 @@
             this.btnWork.Size = new System.Drawing.Size(75, 23);
             this.btnWork.TabIndex = 6;
             this.btnWork.Text = "Работа";
+            this.toolTip1.SetToolTip(this.btnWork, "Start work");
             this.btnWork.UseVisualStyleBackColor = true;
             this.btnWork.Click += new System.EventHandler(this.btnWork_Click);
             // 
@@ -157,6 +163,7 @@
         private System.Windows.Forms.Button btnWork;
         private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

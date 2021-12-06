@@ -50,6 +50,12 @@
             this.поставщикиTableAdapter1 = new WinBD.RBProductDataSetTableAdapters.ПоставщикиTableAdapter();
             this.rbProductDataSet1 = new WinBD.RBProductDataSet();
             this.button3 = new System.Windows.Forms.Button();
+            this.FamtextBox = new System.Windows.Forms.TextBox();
+            this.NametextBox = new System.Windows.Forms.TextBox();
+            this.SectiontextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet1)).BeginInit();
@@ -183,9 +189,9 @@
             this.dataGridView1.DataMember = "Поставщики";
             this.dataGridView1.DataSource = this.dataSet11;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 111);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 185);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(454, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(664, 150);
             this.dataGridView1.TabIndex = 2;
             // 
             // кодПоставщикаDataGridViewTextBoxColumn
@@ -236,11 +242,65 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // FamtextBox
+            // 
+            this.FamtextBox.Location = new System.Drawing.Point(389, 58);
+            this.FamtextBox.Name = "FamtextBox";
+            this.FamtextBox.Size = new System.Drawing.Size(100, 20);
+            this.FamtextBox.TabIndex = 8;
+            // 
+            // NametextBox
+            // 
+            this.NametextBox.Location = new System.Drawing.Point(389, 85);
+            this.NametextBox.Name = "NametextBox";
+            this.NametextBox.Size = new System.Drawing.Size(100, 20);
+            this.NametextBox.TabIndex = 9;
+            // 
+            // SectiontextBox
+            // 
+            this.SectiontextBox.Location = new System.Drawing.Point(389, 112);
+            this.SectiontextBox.Name = "SectiontextBox";
+            this.SectiontextBox.Size = new System.Drawing.Size(100, 20);
+            this.SectiontextBox.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(317, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Фамилия";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(317, 88);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Имя";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(317, 115);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Отдел";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 261);
+            this.ClientSize = new System.Drawing.Size(664, 335);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.SectiontextBox);
+            this.Controls.Add(this.NametextBox);
+            this.Controls.Add(this.FamtextBox);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.FilterTextBox);
             this.Controls.Add(this.SortTextBox);
@@ -282,5 +342,11 @@
         private RBProductDataSetTableAdapters.ПоставщикиTableAdapter поставщикиTableAdapter1;
         private RBProductDataSet rbProductDataSet1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox FamtextBox;
+        private System.Windows.Forms.TextBox NametextBox;
+        private System.Windows.Forms.TextBox SectiontextBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

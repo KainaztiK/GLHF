@@ -30,10 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.rBProductDataSet = new WinDataSourcesWizard.RBProductDataSet();
-            this.поставщики_и_товарыBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.поставщики_и_товарыTableAdapter = new WinDataSourcesWizard.RBProductDataSetTableAdapters.Поставщики_и_товарыTableAdapter();
-            this.tableAdapterManager = new WinDataSourcesWizard.RBProductDataSetTableAdapters.TableAdapterManager();
             this.поставщики_и_товарыBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -47,41 +43,30 @@
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.поставщики_и_товарыBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.поставщики_и_товарыDataGridView = new System.Windows.Forms.DataGridView();
+            this.товарыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rBProductDataSet = new WinDataSourcesWizard.RBProductDataSet();
+            this.поставщики_и_товарыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.поставщики_и_товарыTableAdapter = new WinDataSourcesWizard.RBProductDataSetTableAdapters.Поставщики_и_товарыTableAdapter();
+            this.tableAdapterManager = new WinDataSourcesWizard.RBProductDataSetTableAdapters.TableAdapterManager();
+            this.товарыTableAdapter = new WinDataSourcesWizard.RBProductDataSetTableAdapters.ТоварыTableAdapter();
+            this.поставщикиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.поставщикиTableAdapter = new WinDataSourcesWizard.RBProductDataSetTableAdapters.ПоставщикиTableAdapter();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.товарыDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.поставщики_и_товарыBindingSource)).BeginInit();
+            this.поставщикиDataGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.поставщики_и_товарыBindingNavigator)).BeginInit();
             this.поставщики_и_товарыBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.поставщики_и_товарыDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.товарыBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.поставщики_и_товарыBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.поставщикиBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.товарыDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.поставщикиDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // rBProductDataSet
-            // 
-            this.rBProductDataSet.DataSetName = "RBProductDataSet";
-            this.rBProductDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // поставщики_и_товарыBindingSource
-            // 
-            this.поставщики_и_товарыBindingSource.DataMember = "Поставщики и товары";
-            this.поставщики_и_товарыBindingSource.DataSource = this.rBProductDataSet;
-            // 
-            // поставщики_и_товарыTableAdapter
-            // 
-            this.поставщики_и_товарыTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.UpdateOrder = WinDataSourcesWizard.RBProductDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.Поставщики_и_товарыTableAdapter = this.поставщики_и_товарыTableAdapter;
-            this.tableAdapterManager.ТоварыTableAdapter = null;
             // 
             // поставщики_и_товарыBindingNavigator
             // 
@@ -109,7 +94,7 @@
             this.поставщики_и_товарыBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.поставщики_и_товарыBindingNavigator.Name = "поставщики_и_товарыBindingNavigator";
             this.поставщики_и_товарыBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.поставщики_и_товарыBindingNavigator.Size = new System.Drawing.Size(800, 25);
+            this.поставщики_и_товарыBindingNavigator.Size = new System.Drawing.Size(954, 25);
             this.поставщики_и_товарыBindingNavigator.TabIndex = 0;
             this.поставщики_и_товарыBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -148,14 +133,14 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 15);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
             this.bindingNavigatorCountItem.Text = "для {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -163,7 +148,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -172,13 +157,13 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -195,7 +180,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // поставщики_и_товарыBindingNavigatorSaveItem
@@ -203,27 +188,88 @@
             this.поставщики_и_товарыBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.поставщики_и_товарыBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("поставщики_и_товарыBindingNavigatorSaveItem.Image")));
             this.поставщики_и_товарыBindingNavigatorSaveItem.Name = "поставщики_и_товарыBindingNavigatorSaveItem";
-            this.поставщики_и_товарыBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.поставщики_и_товарыBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.поставщики_и_товарыBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.поставщики_и_товарыBindingNavigatorSaveItem.Click += new System.EventHandler(this.поставщики_и_товарыBindingNavigatorSaveItem_Click);
             // 
-            // поставщики_и_товарыDataGridView
+            // товарыBindingSource
             // 
-            this.поставщики_и_товарыDataGridView.AutoGenerateColumns = false;
-            this.поставщики_и_товарыDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.поставщики_и_товарыDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7});
-            this.поставщики_и_товарыDataGridView.DataSource = this.поставщики_и_товарыBindingSource;
-            this.поставщики_и_товарыDataGridView.Location = new System.Drawing.Point(25, 344);
-            this.поставщики_и_товарыDataGridView.Name = "поставщики_и_товарыDataGridView";
-            this.поставщики_и_товарыDataGridView.Size = new System.Drawing.Size(754, 220);
-            this.поставщики_и_товарыDataGridView.TabIndex = 1;
+            this.товарыBindingSource.DataMember = "Товары";
+            this.товарыBindingSource.DataSource = this.rBProductDataSet;
+            // 
+            // rBProductDataSet
+            // 
+            this.rBProductDataSet.DataSetName = "RBProductDataSet";
+            this.rBProductDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // поставщики_и_товарыBindingSource
+            // 
+            this.поставщики_и_товарыBindingSource.DataMember = "Поставщики и товары";
+            this.поставщики_и_товарыBindingSource.DataSource = this.rBProductDataSet;
+            // 
+            // поставщики_и_товарыTableAdapter
+            // 
+            this.поставщики_и_товарыTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.UpdateOrder = WinDataSourcesWizard.RBProductDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.Поставщики_и_товарыTableAdapter = this.поставщики_и_товарыTableAdapter;
+            this.tableAdapterManager.ПоставщикиTableAdapter = null;
+            this.tableAdapterManager.ТоварыTableAdapter = this.товарыTableAdapter;
+            // 
+            // товарыTableAdapter
+            // 
+            this.товарыTableAdapter.ClearBeforeFill = true;
+            // 
+            // поставщикиBindingSource
+            // 
+            this.поставщикиBindingSource.DataMember = "Поставщики";
+            this.поставщикиBindingSource.DataSource = this.rBProductDataSet;
+            // 
+            // поставщикиTableAdapter
+            // 
+            this.поставщикиTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Код поставщика";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Код поставщика";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Цена, $";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Цена, $";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Наименование";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Наименование";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Код продукта";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Код продукта";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // товарыDataGridView
+            // 
+            this.товарыDataGridView.AutoGenerateColumns = false;
+            this.товарыDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.товарыDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11});
+            this.товарыDataGridView.DataSource = this.товарыBindingSource;
+            this.товарыDataGridView.Location = new System.Drawing.Point(25, 106);
+            this.товарыDataGridView.Name = "товарыDataGridView";
+            this.товарыDataGridView.Size = new System.Drawing.Size(447, 220);
+            this.товарыDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -231,58 +277,38 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "Код поставщика";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // dataGridViewTextBoxColumn2
+            // поставщикиDataGridView
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Поставщик";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Поставщик";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Адрес поставщика";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Адрес поставщика";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Цена, $";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Цена, $";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Телефон";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Телефон";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Наименование";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Наименование";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Код продукта";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Код продукта";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.поставщикиDataGridView.AutoGenerateColumns = false;
+            this.поставщикиDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.поставщикиDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1});
+            this.поставщикиDataGridView.DataSource = this.товарыBindingSource;
+            this.поставщикиDataGridView.Location = new System.Drawing.Point(507, 106);
+            this.поставщикиDataGridView.Name = "поставщикиDataGridView";
+            this.поставщикиDataGridView.Size = new System.Drawing.Size(157, 220);
+            this.поставщикиDataGridView.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 567);
-            this.Controls.Add(this.поставщики_и_товарыDataGridView);
+            this.ClientSize = new System.Drawing.Size(954, 584);
+            this.Controls.Add(this.поставщикиDataGridView);
+            this.Controls.Add(this.товарыDataGridView);
             this.Controls.Add(this.поставщики_и_товарыBindingNavigator);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.поставщики_и_товарыBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.поставщики_и_товарыBindingNavigator)).EndInit();
             this.поставщики_и_товарыBindingNavigator.ResumeLayout(false);
             this.поставщики_и_товарыBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.поставщики_и_товарыDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.товарыBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.поставщики_и_товарыBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.поставщикиBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.товарыDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.поставщикиDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,14 +333,17 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton поставщики_и_товарыBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView поставщики_и_товарыDataGridView;
+        private RBProductDataSetTableAdapters.ТоварыTableAdapter товарыTableAdapter;
+        private System.Windows.Forms.BindingSource товарыBindingSource;
+        private System.Windows.Forms.BindingSource поставщикиBindingSource;
+        private RBProductDataSetTableAdapters.ПоставщикиTableAdapter поставщикиTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridView товарыDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridView поставщикиDataGridView;
     }
 }
 

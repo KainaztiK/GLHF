@@ -56,6 +56,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.Previousbutton = new System.Windows.Forms.Button();
+            this.Nextbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet1)).BeginInit();
@@ -244,21 +246,21 @@
             // 
             // FamtextBox
             // 
-            this.FamtextBox.Location = new System.Drawing.Point(389, 58);
+            this.FamtextBox.Location = new System.Drawing.Point(501, 56);
             this.FamtextBox.Name = "FamtextBox";
             this.FamtextBox.Size = new System.Drawing.Size(100, 20);
             this.FamtextBox.TabIndex = 8;
             // 
             // NametextBox
             // 
-            this.NametextBox.Location = new System.Drawing.Point(389, 85);
+            this.NametextBox.Location = new System.Drawing.Point(501, 83);
             this.NametextBox.Name = "NametextBox";
             this.NametextBox.Size = new System.Drawing.Size(100, 20);
             this.NametextBox.TabIndex = 9;
             // 
             // SectiontextBox
             // 
-            this.SectiontextBox.Location = new System.Drawing.Point(389, 112);
+            this.SectiontextBox.Location = new System.Drawing.Point(501, 110);
             this.SectiontextBox.Name = "SectiontextBox";
             this.SectiontextBox.Size = new System.Drawing.Size(100, 20);
             this.SectiontextBox.TabIndex = 10;
@@ -266,7 +268,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(317, 61);
+            this.label3.Location = new System.Drawing.Point(429, 59);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 13);
             this.label3.TabIndex = 11;
@@ -275,7 +277,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(317, 88);
+            this.label4.Location = new System.Drawing.Point(429, 86);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 13);
             this.label4.TabIndex = 12;
@@ -284,17 +286,37 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(317, 115);
+            this.label5.Location = new System.Drawing.Point(429, 113);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 13;
             this.label5.Text = "Отдел";
+            // 
+            // Previousbutton
+            // 
+            this.Previousbutton.Location = new System.Drawing.Point(427, 22);
+            this.Previousbutton.Name = "Previousbutton";
+            this.Previousbutton.Size = new System.Drawing.Size(75, 23);
+            this.Previousbutton.TabIndex = 14;
+            this.Previousbutton.Text = "Previous";
+            this.Previousbutton.UseVisualStyleBackColor = true;
+            // 
+            // Nextbutton
+            // 
+            this.Nextbutton.Location = new System.Drawing.Point(526, 22);
+            this.Nextbutton.Name = "Nextbutton";
+            this.Nextbutton.Size = new System.Drawing.Size(75, 23);
+            this.Nextbutton.TabIndex = 15;
+            this.Nextbutton.Text = "Next";
+            this.Nextbutton.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(664, 335);
+            this.Controls.Add(this.Nextbutton);
+            this.Controls.Add(this.Previousbutton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -348,5 +370,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button Previousbutton;
+        private System.Windows.Forms.Button Nextbutton;
     }
 }

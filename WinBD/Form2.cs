@@ -45,5 +45,15 @@ namespace WinBD
             NametextBox.DataBindings.Add("Text", sotrBindingSourse, "Адрес поставщика");
             SectiontextBox.DataBindings.Add("Text", sotrBindingSourse, "Телефон");
         }
+
+        private void Previousbutton_Click(object sender, EventArgs e)
+        {
+            sotrBindingSourse.MovePrevious();
+        }
+
+        private void Nextbutton_Click(object sender, EventArgs e)
+        {
+            sotrBindingSourse.MoveNext();
+        }
     }
 }

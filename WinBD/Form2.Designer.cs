@@ -300,6 +300,7 @@
             this.Previousbutton.TabIndex = 14;
             this.Previousbutton.Text = "Previous";
             this.Previousbutton.UseVisualStyleBackColor = true;
+            this.Previousbutton.Click += new System.EventHandler(this.Previousbutton_Click);
             // 
             // Nextbutton
             // 
@@ -309,6 +310,7 @@
             this.Nextbutton.TabIndex = 15;
             this.Nextbutton.Text = "Next";
             this.Nextbutton.UseVisualStyleBackColor = true;
+            this.Nextbutton.Click += new System.EventHandler(this.Nextbutton_Click);
             // 
             // Form2
             // 

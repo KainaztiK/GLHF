@@ -35,5 +35,15 @@ namespace WinBD
             ПоставщикиDataView.Sort = SortTextBox.Text;
             ПоставщикиDataView.RowFilter = FilterTextBox.Text;
         }
+
+        private BindingSource sotrBindingSourse;
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            поставщикиTableAdapter1.Fill(rbProductDataSet1.Поставщики);
+            sotrBindingSourse = new BindingSource(rbProductDataSet1, "Поставщики");
+            FamtextBox.DataBindings.Add("Text", sotrBindingSourse, "Поставщик");
+            NametextBox.DataBindings.Add("Text", sotrBindingSourse, "Адрес поставщика");
+            SectiontextBox.DataBindings.Add("Text", sotrBindingSourse, "Телефон");
+        }
     }
 }
